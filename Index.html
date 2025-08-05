@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Website Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>AI Code Studio</header>
+    
+    <section id="editor">
+      <textarea id="prompt" placeholder="Describe your website..."></textarea>
+      <button onclick="generate()">Generate Website</button>
+    </section>
+    
+    <section id="log">
+      <h3>Activity Log</h3>
+      <pre id="log-output">Waiting for prompt...</pre>
+    </section>
+    
+    <section id="preview">
+      <h3>Preview</h3>
+      <iframe id="iframe-preview"></iframe>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
